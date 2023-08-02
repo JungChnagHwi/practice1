@@ -1,4 +1,4 @@
-#주몽
+# 주몽
 n=int(input())
 m=int(input())
 count=0
