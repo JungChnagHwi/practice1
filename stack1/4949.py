@@ -11,18 +11,20 @@ while True:
             stack.append('(')
         elif i == '[':
             stack.append('[')
+
+
         elif i == ')':
-            if len(stack) == 0:
-                stack.append(')')
-                break
-            elif stack[-1] == '(':
+            if len(stack) != 0 and stack[-1] == '(':
                 stack.pop()
+            elif stack.append(')'):
+                break
+
+
         elif i == ']':
-            if len(stack) == 0:
-                stack.append(']')
-                break
-            elif stack[-1] == '[':
+            if len(stack) != 0 and stack[-1] == '[':
                 stack.pop()
+            elif stack.append(']'):
+                break
 
     if len(stack) != 0:
         print('no')
