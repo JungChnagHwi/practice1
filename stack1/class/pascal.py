@@ -7,7 +7,8 @@ for tc in range(tc):
         for i in range(n):
             dp[i][0] = 1
             for j in range(1,n):
-                dp[i][j] = dp[i-1][j-1] + dp[i-1][j] # 현재값 = 현재값 위 숫자 + 위 왼쪽 숫자
+                dp[i][j] = dp[i-1][j-1] + dp[i-1][j]
+                # 현재값 = 현재값 위 숫자 + 위 왼쪽 숫자
         for i in range(n):
             print()
             for j in range(i + 1):
