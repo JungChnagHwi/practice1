@@ -7,7 +7,7 @@ for tc in range(tc):
         stack.append(i)
         if len(stack) == 1:
             continue
-        elif stack[-2] == stack[-1]:
+        elif stack[-2] == stack[-1]: # 연속문자 삭제
             stack.pop()
             stack.pop()
 
