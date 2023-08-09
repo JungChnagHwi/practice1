@@ -14,8 +14,7 @@ for ts in range(ts):
 
     count = 0
     while remainder <= length / 10:
-        ans = Factorial(square + remainder) / (
-                    Factorial(square) * Factorial(remainder))  # 세로 직사강형 + 정사각형 이 올 수 있는 경우의 수
+        ans = Factorial(square + remainder) / (Factorial(square) * Factorial(remainder))  # 세로 직사강형 + 정사각형 이 올 수 있는 경우의 수
         count += ans * (2 ** square)  # 세로 직사각형 + 각 정사각형을 가로 직사각형 2개로 바꾸거나 아니거나 합친 경우의 수
         square -= 1
         remainder += 2  # 정사각형이 없어질 때까지 반복
